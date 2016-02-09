@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Aubrey);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+.metro {
+    background-image: url('../img/metro.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(128, 19, 0, 0.9));
+}
+
+.title,
+.subtitle {
+    font-family: 'Aubrey', cursive;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
