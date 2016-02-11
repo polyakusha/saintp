@@ -15,13 +15,14 @@ html {
 
 body,
 .title,
-.subtitle {
+.subtitle,
+.menu {
     color: #fff;
+    text-shadow: 0 4px 15px black;
 }
 
 .hero {
     background: rgba(0, 0, 0, 0.2);
-    text-shadow: 0 4px 15px black;
 }
 
 .textholder{
@@ -29,7 +30,8 @@ body,
 }
 
 .title,
-.subtitle {
+.subtitle,
+.menu {
     font-family: 'Aubrey', cursive;
 }
 
@@ -41,3 +43,18 @@ body {
 
 /*Подумать над анимацией*/
 
+.menu {
+    position: fixed;
+    bottom: 0px;
+    z-index: 3;
+    text-align: center;
+    border: 0;
+}
+
+.footer {
+    z-index: 100;
+}
+
+.menu ul {
+    border-bottom: 0;
+}

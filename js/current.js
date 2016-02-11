@@ -70,7 +70,8 @@ $(function () {
         scrollingSpeed: 1000,
         easing: 'easeInElastic',
         css3: false,
-        navigation: true,
+        menu: '#myMenu',
+        //navigation: true,
         navigationPosition: 'left',
         //@todo: тут получше дописать
         navigationTooltips: saintArr,
