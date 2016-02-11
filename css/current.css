@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Aubrey);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
+html {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
 .metro {
     background-image: url('../img/metro.jpg');
     background-repeat: no-repeat;
@@ -9,8 +13,19 @@
     background-size: cover;
 }
 
+body,
+.title,
+.subtitle {
+    color: #fff;
+}
+
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(128, 19, 0, 0.9));
+    background: rgba(0, 0, 0, 0.2);
+    text-shadow: 0 4px 15px black;
+}
+
+.textholder{
+    text-align: justify;
 }
 
 .title,
@@ -21,3 +36,8 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
+
+/*@todo: сделать шаблон для карточки*/
+
+/*Подумать над анимацией*/
+
