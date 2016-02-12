@@ -53,11 +53,12 @@
     var NORMAL_SCROLL_SEL =     '.fp-normal-scroll';
 
     // section nav
-    var SECTION_NAV =           'fp-nav';
+    //rewrited for current project by Polyakusha
+    var SECTION_NAV =           'nav';
     var SECTION_NAV_SEL =       '#' + SECTION_NAV;
-    var SECTION_NAV_TOOLTIP =   'fp-tooltip';
+    var SECTION_NAV_TOOLTIP =   'tooltip';
     var SECTION_NAV_TOOLTIP_SEL='.'+SECTION_NAV_TOOLTIP;
-    var SHOW_ACTIVE_TOOLTIP =   'fp-show-active';
+    var SHOW_ACTIVE_TOOLTIP =   'show-active';
 
     // slide
     var SLIDE_DEFAULT_SEL =     '.slide';
@@ -785,8 +786,10 @@
         /**
         * Creates a vertical navigation bar.
         */
+        //Rewrited for current project by Polyakusha
+
         function addVerticalNavigation(){
-            $body.append('<div id="' + SECTION_NAV + '"><ul></ul></div>');
+            $body.append('<div class="tabs is-fullwidth menu" id="' + SECTION_NAV + '"><ul></ul></div>');
             var nav = $(SECTION_NAV_SEL);
 
             nav.addClass(function() {
@@ -799,22 +802,22 @@
                     link = options.anchors[i];
                 }
 
-                var li = '<li><a href="#' + link + '"><span></span></a>';
+                var li = '<li><a href="#' + link + '">';
 
                 // Only add tooltip if needed (defined by user)
                 var tooltip = options.navigationTooltips[i];
 
                 if (typeof tooltip !== 'undefined' && tooltip !== '') {
-                    li += '<div class="' + SECTION_NAV_TOOLTIP + ' ' + options.navigationPosition + '">' + tooltip + '</div>';
+                    li += tooltip;
                 }
 
-                li += '</li>';
+                li += '</a></li>';
 
                 nav.find('ul').append(li);
             }
 
             //centering it vertically
-            $(SECTION_NAV_SEL).css('margin-top', '-' + ($(SECTION_NAV_SEL).height()/2) + 'px');
+            //$(SECTION_NAV_SEL).css('margin-top', '-' + ($(SECTION_NAV_SEL).height()/2) + 'px');
 
             //activating the current active section
             $(SECTION_NAV_SEL).find('li').eq($(SECTION_ACTIVE_SEL).index(SECTION_SEL)).find('a').addClass(ACTIVE);

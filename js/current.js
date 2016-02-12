@@ -41,6 +41,9 @@ saintArr = Object.keys(saint);
 
 $(function () {
 
+    //Menu generation
+
+
     //Money stuff
     $.getJSON(
         // NB: using Open Exchange Rates here, but you can use any source!
@@ -70,9 +73,9 @@ $(function () {
         scrollingSpeed: 1000,
         easing: 'easeInElastic',
         css3: false,
-        menu: '#myMenu',
-        //navigation: true,
-        navigationPosition: 'left',
+        //menu: '#myMenu',
+        navigation: true,
+        //navigationPosition: 'left',
         //@todo: тут получше дописать
         navigationTooltips: saintArr,
         showActiveTooltip: false,
@@ -83,7 +86,7 @@ $(function () {
                 if (anchorLink == saintArrPos && saintArrPos != 'welcome') {
                     var blya = parseFloat((fx.convert(saint[saintArrPos]).toFixed(2)));
                     var tagname = 's' + saintArrPos;
-                    console.log(tagname);
+                    //console.log(tagname);
                     var myCounter = new CountUp(tagname, 0, blya, 2, 0.7, options);
                     myCounter.start();
                 }
