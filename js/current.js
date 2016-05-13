@@ -46,8 +46,7 @@ $(function () {
 
     //Money stuff
     $.getJSON(
-        // NB: using Open Exchange Rates here, but you can use any source!
-        'https://openexchangerates.org/api/latest.json?app_id=dc24bad74a9649f79gf29784c7d935106',
+        'http://api.fixer.io/latest',
         function(data) {
             if ( typeof fx !== "undefined" && fx.rates ) {
                 fx.rates = data.rates;
