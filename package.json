@@ -1,0 +1,16 @@
+{
+  "name": "letsgotospb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pug": "^2.0.0-alpha6",
+    "bulma": "^0.0.24"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
