@@ -73,11 +73,11 @@ $(function () {
         easing: 'easeInElastic',
         css3: false,
         //menu: '#myMenu',
-        navigation: true,
+        //navigation: true,
         //navigationPosition: 'left',
         //@todo: тут получше дописать
-        navigationTooltips: saintArr,
-        showActiveTooltip: false,
+        //navigationTooltips: saintArr,
+        //showActiveTooltip: false,
 
         afterLoad: function(anchorLink, index){
             for (i in saintArr) {
