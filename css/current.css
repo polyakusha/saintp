@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Aubrey);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
-/*@todo: fix menu*/
 
 html {
     -webkit-font-smoothing: subpixel-antialiased;
@@ -15,7 +14,7 @@ html {
     background-size: cover;
 }
 
-
+/*todo: сделать самому фотографии всех нужных мест*/
 .hermitage {
     background-image: url('../img/hermitage.jpg');
     background-repeat: no-repeat;
@@ -24,11 +23,49 @@ html {
     background-size: cover;
 }
 
+.boattrip {
+    background-image: url('../img/boattrip.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
+.isaak {
+    background-image: url('../img/isaak.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.peterhof {
+    background-image: url('../img/peterhof.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 
 .metro {
     background-image: url('../img/metro.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.swanlake {
+    background-image: url('../img/swanlake.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.moscow {
+    background-image: url('../img/moscow.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -61,10 +98,6 @@ body,
 body {
     font-family: 'Raleway', sans-serif;
 }
-
-/*@todo: сделать шаблон для карточки*/
-
-/*Подумать над анимацией*/
 
 .menu {
     position: fixed;

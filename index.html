@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--todo: сделать тут всё красиво, прочитать про то, как собирать проекты-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="css/letsgospb.css">-->
     <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
@@ -20,55 +22,35 @@
 <body>
 
 <div id="fullpage">
+
+    <!--Main section-->
     <div class="section welcome">
         <section class="hero is-fullheight">
             <div class="hero-content">
                 <div class="container">
-                    <h1 class="title" id="suber">
-                        Full Height title
-                    </h1>
-                    <h2 class="subtitle">
-                        Full Height subtitle
-                    </h2>
-                </div>
-            </div>
-        </section>
-    </div>
-
-
-    <div class="section metro">
-        <section class="hero is-fullheight">
-            <div class="hero-head">
-                <div class="container">
-                    <span class="icon is-medium">
-                        <i class="fa fa-chevron-up"></i>
-                    </span>
-                </div>
-            </div>
-            <div class="hero-body">
-                <div class="hero-content">
-                    <div class="container">
-                        <div class="columns is-vcentered is-desktop">
-                            <div class="column is-8">
-                                <h2 class="title is-2">
-                                    Metro ticket
-                                </h2>
-                                <h3 class="subtitle is-4">
-                                    Palaces even underground!
-                                </h3>
-                                <div class="textholder">
-                                    <p>
-                                        Saint-Petersburg metro was the Soviet project build as a bomb-shelter. Now you could enjoy a ride with thousands other people around you and see the stations, what looks exactcly like the palaces.
-                                    </p>
-                                    <p>
-                                        <strong>Should visit:</strong> "Avtovo".
-                                    </p>
-                                </div>
+                    <div class="columns is-vcentered is-desktop">
+                        <div class="column">
+                            <h2 class="title is-2">
+                                Welcome to Saint-Petersburg
+                            </h2>
+                            <h3 class="subtitle is-4">
+                                It's cheap now
+                            </h3>
+                            <div class="textholder">
+                                <p>
+                                    Saint-Petersburg is one of the most beautiful cities in Europe. It was build by Peter The Great at 27 May of 1703. It was capital of Russian Empire and still give you impression of big european capitals.
+                                </p>
+                                <p>
+                                    In 2014 Russia faced crysis, which leads to fall of russian currency. It's not good for everyone, except tourists. Look at the prices here, it's really cheaper than Paris or Prague. And you probably haven't been here. Welcome!
+                                </p>
                             </div>
-                            <div class="column">
-                                <p class="title"> One ride:</p>
-                                <p class="title is-1" id="smetro">0</p>
-                            </div>
+                            <p>Aviable at:</p>
+                            <p><a href="index.html">English</a> <a href="index.html">Deutsch</a></p>
+                            <p>Currency:</p>
+                            <p>
+                                <a class="USD">USD</a>
+                                <a class="EUR">EUR</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -76,8 +58,8 @@
 
             <div class="hero-foot">
                 <div class="container">
-                    <span class="icon is-medium">
-                        <!--todo: сделать это ссылками-->
+                    <p>Scroll it down!</p>
+                    <span class="icon is-medium movedown">
                         <i class="fa fa-chevron-down"></i>
                     </span>
                 </div>
@@ -100,35 +82,130 @@
         </section>
     </div>
 
-    <!--<div class="section">-->
-        <!--<section class="hero is-primary is-fullheight">-->
-            <!--<div class="hero-content">-->
-                <!--<div class="container">-->
-                    <!--<h1 class="title" id="suber">-->
-                        <!--Full Height title-->
-                    <!--</h1>-->
-                    <!--<h2 class="subtitle">-->
-                        <!--Full Height subtitle-->
-                    <!--</h2>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
-    <!--</div>-->
+    <div class="section boattrip">
+        <section class="hero is-daner is-fullheight">
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="title" id="sboattrip">
+                        Full Height title
+                    </h1>
+                    <h2 class="subtitle">
+                        Full Height subtitle
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    <!--<div class="section">-->
-        <!--<section class="hero is-primary is-fullheight">-->
-            <!--<div class="hero-content">-->
-                <!--<div class="container">-->
-                    <!--<h1 class="title" id="sradissonRoyalBlueBusiness">-->
-                        <!--Full Height title-->
-                    <!--</h1>-->
-                    <!--<h2 class="subtitle">-->
-                        <!--Full Height subtitle-->
-                    <!--</h2>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</section>-->
-    <!--</div>-->
+    <div class="section isaak">
+        <section class="hero is-daner is-fullheight">
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="title" id="sisaak">
+                        Full Height title
+                    </h1>
+                    <h2 class="subtitle">
+                        Full Height subtitle
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="section peterhof">
+        <section class="hero is-daner is-fullheight">
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="title" id="speterhof">
+                        Full Height title
+                    </h1>
+                    <h2 class="subtitle">
+                        Full Height subtitle
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--One thing section template-->
+    <div class="section metro">
+        <section class="hero is-fullheight">
+            <div class="hero-head">
+                <div class="container">
+                    <span class="icon is-medium moveup">
+                        <i class="fa fa-chevron-up"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="hero-body">
+                <div class="hero-content">
+                    <div class="container">
+                        <div class="columns is-vcentered is-desktop">
+                            <div class="column is-8">
+                                <h2 class="title is-2">
+                                    Metro ticket
+                                </h2>
+                                <h3 class="subtitle is-4">
+                                    Palaces even underground!
+                                </h3>
+                                <div class="textholder">
+                                    <p>
+                                        Saint-Petersburg metro was the Soviet project build as a bomb-shelter. Now you could enjoy a ride with thousands other people around you and see the stations, what looks exactcly like the palaces.
+                                    </p>
+                                    <p>
+                                        <!--todo: поправить цвета и всякую такую ерунду в SASS от Bulma-->
+                                        <strong>Should visit:</strong> "Avtovo".
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <p class="title"> One ride:</p>
+                                <p class="title is-1" id="smetro">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-foot">
+                <div class="container">
+                    <span class="icon is-medium movedown">
+                        <i class="fa fa-chevron-down"></i>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="section swanlake">
+        <section class="hero is-daner is-fullheight">
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="title" id="sswanlake">
+                        Full Height title
+                    </h1>
+                    <h2 class="subtitle">
+                        Full Height subtitle
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="section moscow">
+        <section class="hero is-daner is-fullheight">
+            <div class="hero-content">
+                <div class="container">
+                    <h1 class="title" id="smoscow">
+                        Full Height title
+                    </h1>
+                    <h2 class="subtitle">
+                        Full Height subtitle
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </div>
 
 </div>
 </body>

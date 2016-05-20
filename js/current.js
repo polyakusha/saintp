@@ -23,16 +23,18 @@ var options = {
     suffix : '€'
 };
 
-//Object with prices and all of shit
+//Object with prices and all of that shit
 
 var saint = {
     welcome: 0,
-    metro: 35,
     hermitage: 600,
-    uber: 300,
-    radissonRoyalBlueBusiness: 8300,
-    hostel: 500,
-    palkinbigdinner: 8400
+    boattrip: 700,
+    isaak: 150,
+    peterhof: 600,
+    metro: 35,
+    swanlake: 1000,
+    moscow: 1200
+
 };
 
 saintArr = Object.keys(saint);
@@ -40,9 +42,6 @@ saintArr = Object.keys(saint);
 //Main code
 
 $(function () {
-
-    //Menu generation
-
 
     //Money stuff
     $.getJSON(
@@ -62,7 +61,7 @@ $(function () {
     ).done(function () {
         //var something = parseFloat((fx.convert(saint.metro)).toFixed(2));
         //var demo = new CountUp('one', 0, 0, 2, 0.7, options);
-        //demo.update(blya);
+        //demo.update(something);
         //demo.start();
     });
 
@@ -70,14 +69,18 @@ $(function () {
     $('#fullpage').fullpage({
         anchors: saintArr,
         scrollingSpeed: 1000,
-        easing: 'easeInElastic',
+        //todo: нужно пофиксить анимацию, сейчас херово пашет
+        easing: 'easeInQuart',
         css3: false,
+        controlArrows: true,
+        //slidesNavigation: true,
+        //slidesNavPosition: 'bottom',
         //menu: '#myMenu',
         //navigation: true,
         //navigationPosition: 'left',
-        //@todo: тут получше дописать
         //navigationTooltips: saintArr,
         //showActiveTooltip: false,
+
 
         afterLoad: function(anchorLink, index){
             for (i in saintArr) {
@@ -92,8 +95,22 @@ $(function () {
             }
         }
     });
+
+    $('.moveup').on('click', function(){
+        $.fn.fullpage.moveSectionUp();
+    });
+
+    $('.movedown').on('click', function(){
+        $.fn.fullpage.moveSectionDown();
+    });
+
+    $('.USD').on('click', function(){
+        fx.settings = {
+            from : "RUB",
+            to : "USD"
+        };
+        options.suffix = "$";
+    });
+
 });
 
-
-//@todo: обернуть всё в объект - возможно
-//@todo: шаблонизация
