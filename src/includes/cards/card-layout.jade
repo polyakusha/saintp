@@ -1,0 +1,34 @@
+- var name = 'Metro';
+- var title = 'Metro';
+- var subtitle = 'Metro'
+- var id = 'Eblya';
+- var text = 'Saint-Petersburg metro was the Soviet project build as a bomb-shelter. Now you could enjoy a ride with thousands other people around you and see the stations, what looks exactcly like the palaces. **Should visit:** "Avtovo".';
+
+.section(class='#{name}')
+    section.hero.is-fullheight
+        .hero-head
+            .container
+                span.icon.is-medium.moveup
+                    a
+                        i.fa.fa-chevron-up
+        .hero-body
+            .hero-content
+                .container
+                    .columns.is-vcentered.is-desktop
+                        .column.is-8
+                            h2.title.is-2
+                                | #{title}
+                            h3.subtitle.is-4
+                                | #{subtitle}
+                            .content
+                                :markdown
+                                | #{text}
+                        .column
+                            p.title  One ride:
+                            p.title.is-1(id='#{id}') 35 RUB
+        .hero-foot
+            .container
+                span.icon.is-medium.movedown
+                    a
+                        i.fa.fa-chevron-down
+
