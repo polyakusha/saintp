@@ -27,12 +27,13 @@ var options = {
 
 var saint = {
     welcome: 0,
+    metro: 35,
     hermitage: 600,
+    taxi: 250,
     boattrip: 700,
     isaak: 150,
-    peterhof: 600,
-    metro: 35,
     swanlake: 1000,
+    peterhof: 700,
     moscow: 1200
 
 };
@@ -69,7 +70,7 @@ $(function () {
     $('#fullpage').fullpage({
         anchors: saintArr,
         scrollingSpeed: 1000,
-        //todo: нужно пофиксить анимацию, сейчас херово пашет
+        //todo: анимация на CSS3
         easing: 'easeInQuart',
         css3: false,
         controlArrows: true,
@@ -104,13 +105,59 @@ $(function () {
         $.fn.fullpage.moveSectionDown();
     });
 
-    $('.USD').on('click', function(){
-        fx.settings = {
-            from : "RUB",
-            to : "USD"
-        };
-        options.suffix = "$";
-    });
+    //todo: объектик создать или что-то подобное
+
+    $('.EUR').addClass('moneynow');
+
+    $('.moneys').ready(
+        $('a').on('click', function(){
+          var newCurrency = this.className;
+            fx.settings = {
+                from : "RUB",
+                to : newCurrency
+            };
+            if (newCurrency == 'EUR') {
+                options.suffix = "€";
+            }
+            else if (newCurrency == 'USD') {
+                options.suffix = "$";
+            }
+            else if (newCurrency == 'GBP') {
+                options.suffix = "£";
+            }
+            else if (newCurrency == 'RON') {
+                option.suffix = 'lei';
+            }
+            else if (newCurrency == 'SEK') {
+                option.suffix = 'kr';
+            }
+            else if (newCurrency == 'NOK') {
+                options.suffix = "kr, –";
+            }
+            else if (newCurrency == 'DKK') {
+                options.suffix = "kr.";
+            }
+            else {
+                options.suffix = ' ' + newCurrency;
+            }
+            $('.moneynow').removeClass('moneynow');
+            $(this).addClass('moneynow');
+        })
+    );
+
+
+    //$('.EUR').on('click', function(){
+    //    fx.settings = {
+    //        from : "RUB",
+    //        to : "EUR"
+    //    };
+    //    options.suffix = "€";
+    //    $('.moneynow').removeClass('moneynow');
+    //    $('.EUR').addClass('moneynow');
+    //});
+
+
+
 
 });
 

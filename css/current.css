@@ -1,13 +1,16 @@
-@import url(https://fonts.googleapis.com/css?family=Aubrey);
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
-
-
 html {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.welcome {
-    background-image: url('../img/main.jpg');
+.content  {
+    text-align: justify;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 57, 166, 0.45), rgba(213, 43, 30, 0.45));
+}
+
+.section {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -15,102 +18,62 @@ html {
 }
 
 /*todo: сделать самому фотографии всех нужных мест*/
+
+.welcome {
+    background-image: url('../img/main.jpg');
+}
+
 .hermitage {
     background-image: url('../img/hermitage.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .boattrip {
     background-image: url('../img/boattrip.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .isaak {
     background-image: url('../img/isaak.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .peterhof {
     background-image: url('../img/peterhof.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+}
+
+.taxi {
+    background-image: url('../img/taxi.jpg');
 }
 
 
 .metro {
     background-image: url('../img/metro.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .swanlake {
     background-image: url('../img/swanlake.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .moscow {
     background-image: url('../img/moscow.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-
-
-body,
-.title,
-.subtitle,
-.menu {
-    color: white;
-}
-
-.hero {
-    background: linear-gradient(rgba(0, 57, 166, 0.33), rgba(213, 43, 30, 0.33));
-}
-
-.textholder{
-    text-align: justify;
 }
 
 .title,
 .subtitle,
-.menu {
+.menu,
+.hero-foot,
+.hero-head {
     font-family: 'Aubrey', cursive;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-}
-
-.menu {
-    position: fixed;
-    bottom: 0px;
-    z-index: 3;
     text-align: center;
-    border: 0;
+    color: #fff6ba;
 }
 
-.footer {
-    z-index: 100;
+.credits {
+    text-align: left;
+    color: #fff;
+    padding: 20px;
 }
 
-.menu ul {
-    border-bottom: 0;
+.moneynow {
+    color: #4981a0;
+    font-weight: 700;
 }
+
