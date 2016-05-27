@@ -3319,16 +3319,16 @@ $(function () {
                 options.suffix = "£";
             }
             else if (newCurrency == 'RON') {
-                options.suffix = 'lei';
+                options.suffix = ' ' + 'lei';
             }
             else if (newCurrency == 'SEK') {
-                options.suffix = 'kr';
+                options.suffix = ' ' + 'kr';
             }
             else if (newCurrency == 'NOK') {
-                options.suffix = "kr, –";
+                options.suffix = ' ' + "kr, –";
             }
             else if (newCurrency == 'DKK') {
-                options.suffix = "kr.";
+                options.suffix = ' ' + "kr.";
             }
             else {
                 options.suffix = ' ' + newCurrency;
