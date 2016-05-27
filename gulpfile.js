@@ -60,7 +60,8 @@ gulp.task('js', function () {
             './src/js/jquery-ui.min.js',
             './src/js/jquery.easings.min.js',
             './src/js/countUp.js',
-            './src/js/current.js'
+            './src/js/current.js',
+            './src/js/google.js'
         ])
         .pipe(plumber())
         .pipe(rigger()) //Прогоним через rigger
