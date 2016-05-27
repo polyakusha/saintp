@@ -187,6 +187,7 @@ pre {
 
 body {
   color: #fff;
+  text-shadow: 5px 5px 10px #000000;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.42857; }
@@ -3980,7 +3981,6 @@ html {
 .hero {
     background: -webkit-linear-gradient(rgba(0, 57, 166, 0.45), rgba(213, 43, 30, 0.45));
     background: linear-gradient(rgba(0, 57, 166, 0.45), rgba(213, 43, 30, 0.45));
-    text-shadow: 5px 5px 10px #000000;
 }
 
 .section {
