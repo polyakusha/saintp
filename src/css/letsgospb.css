@@ -3282,27 +3282,27 @@ a.header-item {
 
 @media screen and (max-width: 370px) {
   .title.is-2 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .title.is-1 {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .title:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .title {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .subtitle.is-4 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .content {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .hero-foot {
