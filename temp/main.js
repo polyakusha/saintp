@@ -3303,8 +3303,9 @@ $(function () {
     $('.EUR').addClass('moneynow');
 
     $('.moneys').ready(
-        $('a').on('click', function(){
-          var newCurrency = this.className;
+        $('.rates').on('click', function(){
+            var newCurrencyTech = this.className;
+            var newCurrency = newCurrencyTech.slice(-3);
             fx.settings = {
                 from : "RUB",
                 to : newCurrency
@@ -3321,11 +3322,11 @@ $(function () {
             else if (newCurrency == 'RON') {
                 options.suffix = ' ' + 'lei';
             }
-            else if (newCurrency == 'SEK') {
-                options.suffix = ' ' + 'kr';
-            }
             else if (newCurrency == 'NOK') {
                 options.suffix = ' ' + "kr, –";
+            }
+            else if (newCurrency == 'SEK') {
+                options.suffix = ' ' + 'kr';
             }
             else if (newCurrency == 'DKK') {
                 options.suffix = ' ' + "kr.";
