@@ -82,28 +82,25 @@ body {
 }
 
 @media screen and (max-width: 370px) {
-    .title.is-2 {
-        font-size: 30px;
+    .title.is-1,
+    .title.is-2{
+        font-size: 25px;
     }
 
-    .title.is-1 {
-        font-size: 30px;
+    .title:not(:last-child),
+    .subtitle:not(:last-child),
+    .content p:not(:last-child)
+    {
+        margin-bottom: 14px;
     }
 
-    .title:not(:last-child) {
-        margin-bottom: 20px;
-    }
-
-    .title {
-        font-size: 16px;
-    }
-
+    .title,
     .subtitle.is-4 {
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .content {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .hero-foot {
@@ -112,28 +109,25 @@ body {
 }
 
 @media screen and (orientation: landscape) and (max-width: 800px) {
-    .title.is-2 {
+    .title.is-1,
+    .title.is-2{
         font-size: 25px;
     }
 
-    .title.is-1 {
-        font-size: 25px;
+    .title:not(:last-child),
+    .subtitle:not(:last-child),
+    .content p:not(:last-child)
+    {
+        margin-bottom: 14px;
     }
 
-    .title:not(:last-child) {
-        margin-bottom: 10px;
-    }
-
-    .title {
-        font-size: 14px;
-    }
-
+    .title,
     .subtitle.is-4 {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .content {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .hero-foot {
