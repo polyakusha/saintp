@@ -10,10 +10,6 @@ html {
     background: linear-gradient(rgba(0, 57, 166, 0.45), rgba(213, 43, 30, 0.45));
 }
 
-body {
-    text-shadow: 5px 5px 10px #000000;
-}
-
 .section {
     background-repeat: no-repeat;
     background-position: center;
