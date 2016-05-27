@@ -3319,10 +3319,10 @@ $(function () {
                 options.suffix = "£";
             }
             else if (newCurrency == 'RON') {
-                option.suffix = 'lei';
+                options.suffix = 'lei';
             }
             else if (newCurrency == 'SEK') {
-                option.suffix = 'kr';
+                options.suffix = 'kr';
             }
             else if (newCurrency == 'NOK') {
                 options.suffix = "kr, –";

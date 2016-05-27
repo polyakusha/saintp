@@ -10,7 +10,8 @@ var gulp        = require('gulp'),
     imagemin    = require('gulp-imagemin'),
     pngquant    = require('imagemin-pngquant'),
     jade        = require('gulp-jade'),
-    plumber     = require('gulp-plumber');
+    plumber     = require('gulp-plumber'),
+    uncss       = require('gulp-uncss');;
 
 var path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
@@ -83,6 +84,7 @@ gulp.task('style', function () {
         //.pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(concat("main.css"))
         .pipe(prefixer()) //Добавим вендорные префиксы
+        //.pipe(uncss({html: './build/index.html'}))
         .pipe(gulp.dest("temp/")) // сохраняем полученный файл в нужной директории
         //.pipe(sass('temp/main.scss'))
         .pipe(cssmin()) //Сожмем
