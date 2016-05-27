@@ -110,8 +110,9 @@ $(function () {
     $('.EUR').addClass('moneynow');
 
     $('.moneys').ready(
-        $('a').on('click', function(){
-          var newCurrency = this.className;
+        $('.rates').on('click', function(){
+          var newCurrencyTech = this.className;
+          var newCurrency = newCurrencyTech.slice(-3);
             fx.settings = {
                 from : "RUB",
                 to : newCurrency
