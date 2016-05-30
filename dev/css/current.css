@@ -31,6 +31,10 @@ body {
     background-image: url('../img/hermitage.jpg');
 }
 
+.donut {
+    background-image: url('../img/donut.jpg');
+}
+
 .boattrip {
     background-image: url('../img/boattrip.jpg');
 }
