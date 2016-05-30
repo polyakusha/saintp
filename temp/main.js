@@ -3224,6 +3224,7 @@ var saint = {
     hermitage: 600,
     taxi: 250,
     boattrip: 700,
+    pyshka: 13,
     isaak: 150,
     swanlake: 1000,
     peterhof: 700,
