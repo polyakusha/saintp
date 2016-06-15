@@ -4102,7 +4102,8 @@ html {
     padding: 20px;
 }
 
-.moneynow {
+.moneynow,
+.langnow {
     color: #4981a0;
     font-weight: 700;
 }
