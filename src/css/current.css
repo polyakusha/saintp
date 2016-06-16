@@ -60,6 +60,10 @@ html {
     background-image: url('../img/moscow.jpg');
 }
 
+.credits {
+    background-image: url('../img/credits.jpg');
+}
+
 .title,
 .subtitle,
 .menu,
@@ -68,12 +72,6 @@ html {
     font-family: 'Aubrey', cursive;
     text-align: center;
     color: #fff6ba;
-}
-
-.credits {
-    text-align: left;
-    color: #fff;
-    padding: 20px;
 }
 
 .moneynow,

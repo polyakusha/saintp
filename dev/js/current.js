@@ -31,11 +31,12 @@ var saint = {
     hermitage: 600,
     taxi: 250,
     boattrip: 700,
+    pyshka: 13,
     isaak: 150,
     swanlake: 1000,
     peterhof: 700,
-    moscow: 1200
-
+    moscow: 1200,
+    credits: 0
 };
 
 saintArr = Object.keys(saint);
@@ -111,8 +112,8 @@ $(function () {
 
     $('.moneys').ready(
         $('.rates').on('click', function(){
-          var newCurrencyTech = this.className;
-          var newCurrency = newCurrencyTech.slice(-3);
+            var newCurrencyTech = this.className;
+            var newCurrency = newCurrencyTech.slice(-3);
             fx.settings = {
                 from : "RUB",
                 to : newCurrency
@@ -127,16 +128,16 @@ $(function () {
                 options.suffix = "£";
             }
             else if (newCurrency == 'RON') {
-                option.suffix = 'lei';
+                options.suffix = ' ' + 'lei';
             }
             else if (newCurrency == 'NOK') {
-                options.suffix = "kr, –";
+                options.suffix = ' ' + "kr, –";
             }
             else if (newCurrency == 'SEK') {
-                option.suffix = 'kr';
+                options.suffix = ' ' + 'kr';
             }
             else if (newCurrency == 'DKK') {
-                options.suffix = "kr.";
+                options.suffix = ' ' + "kr.";
             }
             else {
                 options.suffix = ' ' + newCurrency;

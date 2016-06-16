@@ -64,6 +64,10 @@ body {
     background-image: url('../img/moscow.jpg');
 }
 
+.credits {
+    background-image: url('../img/credits.jpg');
+}
+
 .title,
 .subtitle,
 .menu,
@@ -74,11 +78,11 @@ body {
     color: #fff6ba;
 }
 
-.credits {
-    text-align: left;
-    color: #fff;
-    padding: 20px;
-}
+/*.credits {*/
+    /*text-align: left;*/
+    /*color: #fff;*/
+    /*padding: 20px;*/
+/*}*/
 
 .moneynow {
     color: #4981a0;

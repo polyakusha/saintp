@@ -35,8 +35,8 @@ var saint = {
     isaak: 150,
     swanlake: 1000,
     peterhof: 700,
-    moscow: 1200
-
+    moscow: 1200,
+    credits: 0
 };
 
 saintArr = Object.keys(saint);
