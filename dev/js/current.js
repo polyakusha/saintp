@@ -147,7 +147,6 @@ $(function () {
         })
     );
 
-
     //$('.EUR').on('click', function(){
     //    fx.settings = {
     //        from : "RUB",

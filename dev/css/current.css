@@ -144,3 +144,14 @@ body {
 }
 
 
+.mainMenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+nav.nav {
+    background: rgba(228, 228, 228);
+    z-index: 99;
+}
