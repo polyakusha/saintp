@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--todo: сделать тут всё красиво, прочитать про то, как собирать проекты-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bulma.min.css">
-    <!--<link rel="stylesheet" href="css/letsgospb.css">-->
+    <link rel="stylesheet" href="css/letsgospb.css">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
-    <link rel="stylesheet" href="../build/styles/main.css">
     <link rel="stylesheet" href="css/current.css">
     <!--todo: поставить его в проект-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -26,36 +23,54 @@
 
 <div class="mainMenu">
     <nav class="nav">
-        <div class="nav-left">
-            <a class="nav-item logotop" href="#main">
-                <it>Olga Kling</it>
-            </a>
-            <a href="de" class="nav-item">
-                DE
-            </a>
-            <a href="de" class="nav-item">
-                RU
+        <div class="nav-left is-hidden-mobile">
+            <a class="nav-item" href="#main">
+                saintp.info
             </a>
         </div>
 
-        <span id="nav-toggle" class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </span>
-
-        <div id="nav-menu" class="nav-right nav-menu">
-            <a class="nav-item" href="#timeline">
-                Таймлайн
+        <div class="nav-center">
+            <a class="nav-item">
+                <span class="icon">
+                    <i class="fa fa-subway"></i>
+                </span>
+                <p class="is-hidden-mobile">Transport</p>
             </a>
-            <a class="nav-item" href="#gallery">
-                Галлерея
+            <a class="nav-item">
+                <span class="icon">
+                    <i class="fa fa-cutlery"></i>
+                </span>
+                <p class="is-hidden-mobile">&nbspEat</p>
             </a>
-            <a class="nav-item" href="#wedplan">
-                Свадебный план
+            <a class="nav-item">
+                <span class="icon">
+                    <i class="fa fa-glass"></i>
+                </span>
+                <p class="is-hidden-mobile">&nbspDrink</p>
             </a>
-            <a class="nav-item" href="#contacts">
-                Контакты
+            <a class="nav-item">
+                <span class="icon">
+                    <i class="fa fa-binoculars"></i>
+                </span>
+                <p class="is-hidden-mobile">&nbspSightseeing</p>
+            </a>
+            <a class="nav-item">
+                <span class="icon">
+                    <i class="fa fa-list-ol"></i>
+                </span>
+                <p class="is-hidden-mobile">&nbspThings to do</p>
+            </a>
+            <a class="nav-item">
+                <span class="icon">
+                    <i class="fa fa-bed"></i>
+                </span>
+                <p class="is-hidden-mobile">&nbspAccomodation</p>
+            </a>
+            <a class="nav-item">
+                <span class="icon">
+                    <i class="fa fa-suitcase"></i>
+                </span>
+                <p class="is-hidden-mobile">&nbspDay trips</p>
             </a>
         </div>
     </nav>
@@ -66,9 +81,9 @@
     <!--Main section-->
     <div class="section welcome">
         <section class="hero is-fullheight">
-            <div class="hero-content">
+            <div class="hero-body">
                 <div class="container">
-                    <div class="columns is-vcentered is-desktop">
+                    <div class="columns is-desktop">
                         <div class="column is-10 is-offset-1">
                             <h2 class="title is-2">
                                 Welcome to Saint-Petersburg
@@ -137,8 +152,7 @@
                 </div>
             </div>
             <div class="hero-body">
-                <div class="hero-content">
-                    <div class="container">
+                    <div class="container has-text-centered">
                         <div class="columns is-vcentered">
                             <div class="column is-8">
                                 <h2 class="title is-2">
@@ -162,7 +176,6 @@
                                 <p class="title is-1" id="smetro">35 RUB</p>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
 
@@ -186,10 +199,9 @@
                 </div>
             </div>
             <div class="hero-body">
-                <div class="hero-content">
                     <div class="container">
-                        <div class="columns is-vcentered is-desktop">
-                            <div class="column is-8">
+                        <div class="columns is-vcentered">
+                            <div class="column is-three-quarters">
                                 <h2 class="title is-2">
                                     Hermitage
                                 </h2>
@@ -219,7 +231,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
 
             <div class="hero-foot">
@@ -585,9 +596,9 @@
                     </span>
                 </div>
             </div>
-            <div class="hero-content">
+            <div class="hero-body">
                 <div class="container">
-                    <div class="columns is-desktop">
+                    <div class="columns">
                         <div class="column is-5 is-offset-1">
                             <div class="content">
                                 <h3 class="subtitle is-4">
@@ -621,9 +632,9 @@
                                 </p>
                             </div>
                         </div>
-                        </div>
                     </div>
                 </div>
+            </div>
         </section>
     </div>
 

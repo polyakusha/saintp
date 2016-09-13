@@ -156,8 +156,5 @@ $(function () {
     //    $('.EUR').addClass('moneynow');
     //});
 
-
-
-
 });
 
