@@ -87,10 +87,9 @@ $(function () {
         afterLoad: function(anchorLink, index){
             for (i in saintArr) {
                 var saintArrPos = saintArr[i];
-                if (anchorLink == saintArrPos && saintArrPos != 'welcome') {
+                if (anchorLink == saintArrPos && (saintArrPos != 'welcome' && saintArrPos != 'credits')) {
                     var convertMoney = parseFloat((fx.convert(saint[saintArrPos]).toFixed(2)));
                     var tagname = 's' + saintArrPos;
-                    //console.log(tagname);
                     var myCounter = new CountUp(tagname, 0, convertMoney, 2, 0.7, options);
                     myCounter.start();
                 }
