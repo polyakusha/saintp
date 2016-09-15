@@ -1,0 +1,74 @@
+-
+    var saintpCards = [];
+    saintpCards[0] = {
+        name: 'hermitage',
+        title: 'Hermitage',
+        subtitle: 'The second after Louvre',
+        text: '<p> It&nbsp;was the biggest museum of&nbsp;the Russian Empire and one of&nbsp;the most famous museums of&nbsp;the Old World. The <a href=\"https:\/\/www.hermitagemuseum.org\/wps\/portal\/hermitage\/?lng=en\">museum complex<\/a> includes the <a href=\"https:\/\/en.wikipedia.org\/wiki\/Winter_Palace\">Winter Palace<\/a>, where Russian Emperors have lived. <\/p> <p> <strong>You should check out:<\/strong> <a href=\"https:\/\/en.wikipedia.org\/wiki\/Military_Gallery_of_the_Winter_Palace\">The Military Gallery<\/a>, <a href=\"https:\/\/en.wikipedia.org\/wiki\/Madonna_Litta\">&ldquo;Madonna Littla&rdquo;<\/a> by&nbsp;Leonadro da&nbsp;Vinci, <a href=\"https:\/\/en.wikipedia.org\/wiki\/Dana%C3%AB_(Rembrandt_painting)\">&ldquo;Dana&#235;&rdquo;<\/a> by&nbsp;Rembrandt, <a href=\"https:\/\/www.khanacademy.org\/humanities\/art-1010\/early-abstraction\/fauvism-matisse\/a\/matisse-dance-i\">&ldquo;The Dance&rdquo;<\/a> by&nbsp;Henri Matisse. <\/p> <p> <strong>Free for students (with a&nbsp;Student ID).<\/strong> <\/p>',
+        pricetitle: 'One full price ticket',
+        id: 'shermitage',
+        price: '600 RUB'
+    }
+
+    saintpCards[1] = {
+        name: 'isaak',
+        title: 'Saint Isaac Cathedral',
+        subtitle: 'The rooftop view',
+        text: '<p> The construction of&nbsp;<a href=\"http:\/\/eng.cathedral.ru\/\">this church<\/a> took 40 years. During the Siege of&nbsp;Leningrad the church was damaged by&nbsp;Nazi bombs and you can still see traces from those on&nbsp;it. The view on&nbsp;the city from the top, is&nbsp;probably the most common rooftop picture of&nbsp;St. Petersburg on&nbsp;Instagram. From here you can see how big <nobr>Saint-Petersburg<\/nobr> actually is. <\/p> <p> <strong>Alternative rooftop view:<\/strong> <a href=\"http:\/\/www.loftprojectetagi.ru\/en\/guide\/roof\/\">Loft Project ETAGI<\/a>, for free from 7 to&nbsp;9 am on&nbsp;weekdays. <\/p>',
+        pricetitle: 'One ticket',
+        id: 'sisaak',
+        price: '150 RUB'
+    }
+
+    saintpCards[2] = {
+        name: 'spblood',
+        title: 'The Church of the Savior on Spilled Blood',
+        subtitle: 'St.Basil in Moscow is not the same!' ,
+        text: '<p>Peak point of neo-russian style of Alexander III times - church in memory of his father, which build exactly at the place, when he was killed. It have the huge amount of mosaiques inside for the hands of the best masters of the time.<\/p><p>Another symbol of Saint-Petersburg and peak point for all of the tourist.<\/p><p>Advise: carefully choose the time, when you going in. When it’s rainy and everyone eating and you won’t stay long in the line.<\/p>',
+        pricetitle: 'Average ride',
+        id: 'sspblood',
+        price: '15000 RUB'
+    }
+
+    saintpCards[3] = {
+        name: 'peterpaul',
+        title: 'Peter and Paul Fortress',
+        subtitle: 'It’s where the city starts',
+        text: '<p>The day, when first brick of that fortress was build is the birthday of the city. Cemetery of the all russian Emperors, «Russian Batille», that 6-bastions swedish shape fortress is still one of the most beautiful places of the town.<\/p><p>Try to go there at evening and from the beach you will find the amazing view at the city at the water, Russian Europe. Pushkin called the city «Window to Europe». Probably, the Peter and Paul Fortess is the closest thing to the glass of the window.<\/p><p>Advise: Bring your sun-lotion here during the winter, it’s most famous solarium of the city.<\/p>',
+        pricetitle: 'Average ride',
+        id: 'speterpaul',
+        price: '15000 RUB'
+    }
+
+for every in saintpCards
+    .section(class='#{every.name}')
+        section.hero.is-fullheight
+            .hero-head
+                .container.is-hidden-mobile
+                    span.icon.is-medium.moveup
+                        a
+                            i.fa.fa-chevron-up
+            .hero-body
+                .container
+                    .columns.is-vcentered
+                        .column.is-8
+                            h2.title.is-2
+                                | #{every.title}
+                            h3.subtitle.is-4
+                                | #{every.subtitle}
+                            .content
+                                | !{every.text}
+                        .column
+                            p.title  #{every.pricetitle}:
+                            p.title.is-1(id='#{every.id}') #{every.price}
+            .hero-foot
+                .container.is-hidden-mobile
+                    span.icon.is-medium.movedown
+                        a
+                            i.fa.fa-chevron-down
+
+
+
+
+
+

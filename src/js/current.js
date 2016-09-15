@@ -7,10 +7,10 @@ fx.settings = {
     to : "EUR"
 };
 
-function getAllRates (saint) {
-    var metroEur = (fx.convert(saint.metro)).toFixed(2);
-    console.log(metroEur);
-}
+//function getAllRates (saint) {
+//    var metroEur = (fx.convert(saint.metro)).toFixed(2);
+//    console.log(metroEur);
+//}
 
 //Settings for the countUp.js
 
@@ -21,22 +21,6 @@ var options = {
     decimal : '.',
     prefix : '',
     suffix : '€'
-};
-
-//Object with prices and all of that shit
-
-var saint = {
-    welcome: 0,
-    metro: 35,
-    hermitage: 600,
-    taxi: 250,
-    boattrip: 700,
-    pyshka: 13,
-    isaak: 150,
-    swanlake: 1000,
-    peterhof: 700,
-    moscow: 1200,
-    credits: 0
 };
 
 saintArr = Object.keys(saint);
@@ -85,12 +69,11 @@ $(function () {
 
 
         afterLoad: function(anchorLink, index){
-            for (i in saintArr) {
+            for (i=1; i in saintArr; i++) {
                 var saintArrPos = saintArr[i];
-                if (anchorLink == saintArrPos && saintArrPos != 'welcome') {
+                if (anchorLink == saintArrPos && saintArrPos != 'credits') {
                     var convertMoney = parseFloat((fx.convert(saint[saintArrPos]).toFixed(2)));
                     var tagname = 's' + saintArrPos;
-                    //console.log(tagname);
                     var myCounter = new CountUp(tagname, 0, convertMoney, 2, 0.7, options);
                     myCounter.start();
                 }
@@ -146,19 +129,6 @@ $(function () {
             $(this).addClass('moneynow');
         })
     );
-
-
-    //$('.EUR').on('click', function(){
-    //    fx.settings = {
-    //        from : "RUB",
-    //        to : "EUR"
-    //    };
-    //    options.suffix = "€";
-    //    $('.moneynow').removeClass('moneynow');
-    //    $('.EUR').addClass('moneynow');
-    //});
-
-
 
 
 });

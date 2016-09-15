@@ -1,0 +1,39 @@
+-
+    var saintpCards = [];
+    saintpCards[0] = {
+        name: 'peterhof',
+        title: 'Peterhof',
+        subtitle: 'The baroque Disneyland',
+        text: '<p> A&nbsp;<a href=\"http:\/\/eng.peterhofmuseum.ru\/index.php?lang=eng\">park with beautiful palaces<\/a>, fountains and gardens, where you might feel like a&nbsp;king. This, you could compare with Versailles. <\/p> <p> <strong>Advise:<\/strong> It&nbsp;is&nbsp;better to&nbsp;visit Peterhof on&nbsp;weekdays than on&nbsp;the weekend. Don&rsquo;t forget to&nbsp;check the wheather forecast before though. <\/p>',
+        pricetitle: 'One ticket',
+        id: 'speterhof',
+        price: '700 RUB'
+    }
+
+for every in saintpCards
+    .section(class='#{every.name}')
+        section.hero.is-fullheight
+            .hero-head
+                .container.is-hidden-mobile
+                    span.icon.is-medium.moveup
+                        a
+                            i.fa.fa-chevron-up
+            .hero-body
+                .container
+                    .columns.is-vcentered
+                        .column.is-8
+                            h2.title.is-2
+                                | #{every.title}
+                            h3.subtitle.is-4
+                                | #{every.subtitle}
+                            .content
+                                | !{every.text}
+                        .column
+                            p.title  #{every.pricetitle}:
+                            p.title.is-1(id='#{every.id}') #{every.price}
+
+
+
+
+
+

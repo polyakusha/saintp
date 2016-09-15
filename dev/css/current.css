@@ -92,11 +92,18 @@ html {
 }
 
 nav.nav {
-    background: rgba(228, 228, 228, 0.76);
+    font-family: 'Aubrey', cursive;
+    color: #2305ff;
+    background: rgba(117, 197, 247, 0.99);
+    text-shadow: none;
     z-index: 99;
+    border-bottom: 1px solid #4981a0;
 }
 
 .hero-head {
     margin-top: 4em
 }
 
+.content .icon a:not(.button) {
+   border: none;
+}

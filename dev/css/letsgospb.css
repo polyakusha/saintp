@@ -3827,6 +3827,10 @@ a.panel-block:hover {
   .is-medium{
     font-size: 14px;
   }
+
+  .nav-item {
+    padding: 5px;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-width: 800px) {
@@ -3858,4 +3862,9 @@ a.panel-block:hover {
   .icon {
     font-size: 14px;
   }
+
+  .nav-item {
+    padding: 5px;
+  }
 }
+

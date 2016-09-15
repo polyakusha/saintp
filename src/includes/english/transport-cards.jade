@@ -1,0 +1,74 @@
+-
+    var saintpCards = [];
+    saintpCards[0] = {
+        name: 'metro',
+        title: 'Metro ticket',
+        subtitle: 'Impressive palaces underground!',
+        text: '<p> <a href=\"http:\/\/www.metro.spb.ru\/en\/map.html\">The metro in&nbsp;Leningrad<\/a> was a&nbsp;Soviet project and was originally build also as&nbsp;a&nbsp;<nobr>bomb-shelter<\/nobr>. Today, you can enjoy a&nbsp;ride <nobr>wall-to-wall<\/nobr> to&nbsp;other people and see stations, which look exactly like the halls of&nbsp;famous palaces. <\/p> <p> <strong>You should visit:<\/strong> <a href=\"https:\/\/en.wikipedia.org\/wiki\/Avtovo_(Saint_Petersburg_Metro)\">&ldquo;Avtovo&rdquo;<\/a>, <a href=\"https:\/\/en.wikipedia.org\/wiki\/Ploshchad_Vosstaniya_(Saint_Petersburg_Metro)\">&ldquo;Ploshchad Vosstaniya&rdquo;<\/a>. <\/p>',
+        pricetitle: 'One ride',
+        id: 'smetro',
+        price: '35 RUB'
+    }
+
+    saintpCards[1] = {
+        name: 'taxi',
+        title: 'Taxi',
+        subtitle: 'Cheaper than buying a car',
+        text: '<p> Taxis are usually quite expensive. The rest of&nbsp;the world forbid cheap <nobr>Taxi-Apps<\/nobr> to&nbsp;make taxi business more competitive and fair. Well, in&nbsp;Russia there are taxis that are even cheaper than Uber. <\/p> <p> <strong>You should use:<\/strong> <a href=\"https:\/\/www.uber.com\/cities\/saint-petersburg\">Uber<\/a>, <a href=\"http:\/\/spb.rutaxi.ru\/en\/index.html\">Rutaxi<\/a>, <a href=\"http:\/\/6-000-000.ru\/en\">6-000-000<\/a>. <\/p> <p> <strong>Advise:<\/strong> It&nbsp;is&nbsp;better to&nbsp;call a&nbsp;taxi via an&nbsp;App, than calling one simply from the street. <\/p>',
+        pricetitle: 'Average ride',
+        id: 'staxi',
+        price: '250 RUB'
+    }
+
+    saintpCards[2] = {
+        name: 'marshrutka',
+        title: 'Marshrutka',
+        subtitle: "Don’t call them «teshka»" ,
+        text: '<p>Marshrutka is private bus or mini-bus. It means you don’t get there any social tariffs and it could stop whatever you want. Remarkable sign to find it is the letter «K» before number. Sometimes waiting for the social bus could last hours and it’s why people using marshrutka.<\/p>',
+        pricetitle: 'Average ride',
+        id: 'smarshrutka',
+        price: '40 RUB'
+    }
+
+    saintpCards[3] = {
+        name: 'boattrip',
+        title: 'Take a boat trip',
+        subtitle: 'That\'s what tourists do',
+        text: '<p> The water transport here isn&rsquo;t really a&nbsp;city transport like in&nbsp;Istanbul. But we&nbsp;are sure, that Peter The Great thought that the city would look the best, when looking at&nbsp;it&nbsp;sitting on&nbsp;a&nbsp;boat. You should check it&nbsp;out, agree or&nbsp;disagree with him. <\/p> <p> <strong>You should watch before:<\/strong> music video <a href=\"https:\/\/www.youtube.com\/watch?v=UEFKLBUtkJU\">&ldquo;White Night&rdquo; by&nbsp;DDT<\/a>. <\/p> <p> <strong>Advise:<\/strong> Check the websites of&nbsp;boat trip companies for prices. <\/p>',
+        pricetitle: 'Average ride',
+        id: 'sboattrip',
+        price: '700 RUB'
+    }
+
+for every in saintpCards
+    .section(class='#{every.name}')
+        section.hero.is-fullheight
+            .hero-head
+                .container.is-hidden-mobile
+                    span.icon.is-medium.moveup
+                        a
+                            i.fa.fa-chevron-up
+            .hero-body
+                .container
+                    .columns.is-vcentered
+                        .column.is-8
+                            h2.title.is-2
+                                | #{every.title}
+                            h3.subtitle.is-4
+                                | #{every.subtitle}
+                            .content
+                                | !{every.text}
+                        .column
+                            p.title  #{every.pricetitle}:
+                            p.title.is-1(id='#{every.id}') #{every.price}
+            .hero-foot
+                .container.is-hidden-mobile
+                    span.icon.is-medium.movedown
+                        a
+                            i.fa.fa-chevron-down
+
+
+
+
+
+

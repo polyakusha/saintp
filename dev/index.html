@@ -7,9 +7,23 @@
     <link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/current.css">
-    <!--todo: поставить его в проект-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Welcome to Saint-Petersburg - 'cause it's cheap now</title>
+    <script>
+        var saint = {
+            welcome: 0,
+            metro: 35,
+            hermitage: 600,
+            taxi: 250,
+            boattrip: 700,
+            pyshka: 13,
+            isaak: 150,
+            swanlake: 1000,
+            peterhof: 700,
+            moscow: 1200,
+            credits: 0
+        };
+    </script>
     <!--<script type="text/javascript" src="../build/js/main.js"></script>-->
     <script type="text/javascript" src="js/money.js"></script>
     <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
@@ -25,7 +39,7 @@
     <nav class="nav">
         <div class="nav-left is-hidden-mobile">
             <a class="nav-item" href="#main">
-                saintp.info
+                www.saintp.info
             </a>
         </div>
 
@@ -71,6 +85,12 @@
                     <i class="fa fa-suitcase"></i>
                 </span>
                 <p class="is-hidden-mobile">&nbspDay trips</p>
+            </a>
+            <a class="nav-item">
+                <span class="icon">
+                    <i class="fa fa-info-circle"></i>
+                </span>
+                <p class="is-hidden-mobile">&nbspCredits</p>
             </a>
         </div>
     </nav>

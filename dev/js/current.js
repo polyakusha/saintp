@@ -23,22 +23,6 @@ var options = {
     suffix : '€'
 };
 
-//Object with prices and all of that shit
-
-var saint = {
-    welcome: 0,
-    metro: 35,
-    hermitage: 600,
-    taxi: 250,
-    boattrip: 700,
-    pyshka: 13,
-    isaak: 150,
-    swanlake: 1000,
-    peterhof: 700,
-    moscow: 1200,
-    credits: 0
-};
-
 saintArr = Object.keys(saint);
 
 //Main code
@@ -146,15 +130,6 @@ $(function () {
         })
     );
 
-    //$('.EUR').on('click', function(){
-    //    fx.settings = {
-    //        from : "RUB",
-    //        to : "EUR"
-    //    };
-    //    options.suffix = "€";
-    //    $('.moneynow').removeClass('moneynow');
-    //    $('.EUR').addClass('moneynow');
-    //});
 
 });
 

@@ -23,8 +23,44 @@ html {
     background-image: url('../img/main.jpg');
 }
 
+.transport {
+    background-image: url('../img/transport.jpg');
+}
+
+.thingstodo {
+    background-image: url('../img/thingstodo.jpg');
+}
+
+.zenith {
+     background-image: url('../img/zenith.jpg');
+ }
+
+.mdt {
+    background-image: url('../img/mdt.jpg');
+}
+
+.roofs {
+    background-image: url('../img/roofs.jpg');
+}
+
+.marshrutka {
+    background-image: url('../img/marshrutka.JPG');
+}
+
 .hermitage {
     background-image: url('../img/hermitage.jpg');
+}
+
+.sightseeing {
+    background-image: url('../img/sightseeing.jpg');
+}
+
+.peterpaul {
+    background-image: url('../img/peterpaul.jpg');
+}
+
+.spblood {
+    background-image: url('../img/spblood.jpg');
 }
 
 .boattrip {
@@ -80,6 +116,29 @@ html {
     font-weight: 700;
 }
 
-#fullpage {
-    margin-top: 3em
+.fa {
+    text-decoration: none
+}
+
+.mainMenu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+nav.nav {
+    font-family: 'Aubrey', cursive;
+    color: #2305ff;
+    background: rgba(117, 197, 247, 0.99);
+    text-shadow: none;
+    z-index: 99;
+}
+
+.hero-head {
+    margin-top: 4em
+}
+
+.content a:not(.button) {
+    border: none;
 }

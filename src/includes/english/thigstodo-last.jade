@@ -1,0 +1,39 @@
+-
+    var saintpCards = [];
+    saintpCards[0] = {
+        name: 'roofs',
+        title: 'Roofs of Saint-Petersburg',
+        subtitle: 'Another point of view',
+        text: '<p>Roofs of Saint-Petersburg is the parallel universe, full of romance and their own stories. It could be dangerous and not very legal, but there is the tours to the roofs of the city.<\/p><p>If you want to stay safe - just check out restaurants with rooftop terraces. Food or coffee there could be not good, as you want, but the view is worth it. We hope, that someday the city will figure out how to make that beauty more available for common people.<\/p>',
+        pricetitle: 'One ticket',
+        id: 'sroofs',
+        price: '700 RUB'
+    }
+
+for every in saintpCards
+    .section(class='#{every.name}')
+        section.hero.is-fullheight
+            .hero-head
+                .container.is-hidden-mobile
+                    span.icon.is-medium.moveup
+                        a
+                            i.fa.fa-chevron-up
+            .hero-body
+                .container
+                    .columns.is-vcentered
+                        .column.is-8
+                            h2.title.is-2
+                                | #{every.title}
+                            h3.subtitle.is-4
+                                | #{every.subtitle}
+                            .content
+                                | !{every.text}
+                        .column
+                            p.title  #{every.pricetitle}:
+                            p.title.is-1(id='#{every.id}') #{every.price}
+
+
+
+
+
+

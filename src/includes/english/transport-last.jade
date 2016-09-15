@@ -1,0 +1,39 @@
+-
+    var saintpCards = [];
+    saintpCards[0] = {
+    name: 'moscow',
+    title: 'Moscow',
+    subtitle: 'The worst city in Russia according to Petersburgians',
+    text: '<p>If&nbsp;you get tired of&nbsp;the beauty of&nbsp;<nobr>Saint-Petersburg<\/nobr> you could go&nbsp;to&nbsp;Moscow by&nbsp;train. Buy a&nbsp;&ldquo;Platzcart&rdquo;&nbsp;&mdash; sleep next to&nbsp;many different people and enjoy the smell of&nbsp;their socks. <span class=\"is-hidden-touch\">Even though Peterburgians say they don&rsquo;t like Moscow, we&nbsp;think it&rsquo;s worth a&nbsp;visit, especially to&nbsp;get another impression of&nbsp;Russia<\/span>.<\/p><p><strong>Advise:<\/strong> Buy the train tickets beforehand.<\/p>',
+    pricetitle: 'Train ticket',
+    id: 'smoscow',
+    price: '1200 RUB'
+    }
+
+for every in saintpCards
+    .section(class='#{every.name}')
+        section.hero.is-fullheight
+            .hero-head
+                .container.is-hidden-mobile
+                    span.icon.is-medium.moveup
+                        a
+                            i.fa.fa-chevron-up
+            .hero-body
+                .container
+                    .columns.is-vcentered
+                        .column.is-8
+                            h2.title.is-2
+                                | #{every.title}
+                            h3.subtitle.is-4
+                                | #{every.subtitle}
+                            .content
+                                | !{every.text}
+                        .column
+                            p.title  #{every.pricetitle}:
+                            p.title.is-1(id='#{every.id}') #{every.price}
+
+
+
+
+
+
