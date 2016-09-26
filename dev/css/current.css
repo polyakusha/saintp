@@ -93,11 +93,10 @@ html {
 
 nav.nav {
     font-family: 'Aubrey', cursive;
-    color: #2305ff;
-    background: rgba(117, 197, 247, 0.99);
+    color: #000000;
+    background: rgba(0, 0, 0, 0.55);
     text-shadow: none;
     z-index: 99;
-    border-bottom: 1px solid #4981a0;
 }
 
 .hero-head {
